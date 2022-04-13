@@ -114,13 +114,13 @@ def price_baseline(price,symbol,state: blankly.StrategyState):
 
 """Here, we test our model! We start with $10,000 and connect to Alpaca's API through Blankly. After creating a Blankly strategy and adding our price event, we can run and see the results. We want to compare our strategy's performance to a baseline that just buys and sells as much as possible along the same guidelines as the original strategy."""
 
-exchange = blankly.Alpaca() #Connect to Alpaca API
-strategy = blankly.Strategy(exchange) #Initialize a Blankly strategy
-strategy.add_price_event(price_baseline, symbol='CRM', resolution='1d', init=init_kelly) #Add our price event and initialization. Using the Kelly initialization is fine.
-strategy.add_price_event(price_baseline, symbol='SPY', resolution='1d', init=init_kelly)
-strategy.add_price_event(price_baseline, symbol='AAPL', resolution='1d', init=init_kelly)
-results = strategy.backtest(to='1y', initial_values={'USD': 10000}) #Backtest one year starting with $10,000
-print(results)
+# exchange = blankly.Alpaca() #Connect to Alpaca API
+# strategy = blankly.Strategy(exchange) #Initialize a Blankly strategy
+# strategy.add_price_event(price_baseline, symbol='CRM', resolution='1d', init=init_kelly) #Add our price event and initialization. Using the Kelly initialization is fine.
+# strategy.add_price_event(price_baseline, symbol='SPY', resolution='1d', init=init_kelly)
+# strategy.add_price_event(price_baseline, symbol='AAPL', resolution='1d', init=init_kelly)
+# results = strategy.backtest(to='1y', initial_values={'USD': 10000}) #Backtest one year starting with $10,000
+# print(results)
 
 """When we run our baseline, we see a slight profit along 
 with a Sharpe Ratio of 1.29 and Sortino of 1.7 -- decent in terms of reward/risk.
