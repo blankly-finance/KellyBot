@@ -12,7 +12,7 @@ $ pip install blankly
 ```
 2. Clone the repo -- 
 ```
-git clone https://github.com/blankly-finance/IchimokuBot.git
+git clone https://github.com/blankly-finance/KellyBot.git
 ```
 3. Ensure that you have your Alpaca API Keys connected and set sandbox to true. Check [here](https://docs.blankly.finance/config/keys.json) for more details
 4. Run the python file
