@@ -55,6 +55,6 @@ The [Kelly Criterion](https://blankly.finance/the-kelly-criterion) gives the opt
 ## Next Steps
 
 Fork this repository, and start adding in some more [indicators](https://docs.blankly.finance/metrics/indicators) to test different ways to build the base model. Alternatively, build the Kelly Criterion section onto one of your existing models.
-Take this strategy live by changing it to `s.start()` 
+Take this strategy live by changing it to `strategy.start()` or use `strategy.backtest()` to backtest.
 
 Join our [discord](https://discord.gg/xJAjGEAXNS) and check out our [platform](https://app.blankly.finance).
